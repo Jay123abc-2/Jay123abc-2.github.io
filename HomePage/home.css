@@ -7,3 +7,7 @@ header {
     font-size: 20px;
     font-weight: bold;
 }
+
+button {
+    align-items: center;
+}
