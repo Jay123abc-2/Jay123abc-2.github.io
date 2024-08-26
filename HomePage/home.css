@@ -10,4 +10,6 @@ header {
 
 button {
     align-items: center;
+    background-color: #111317;
+    color: #056cc0;
 }
