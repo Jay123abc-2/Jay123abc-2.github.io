@@ -6,6 +6,10 @@ body {
     font-size: 16px;
 }
 
+h1 {
+    text-align: center;
+}
+
 /* Navigation */
 #homebutton {
     background: transparent;
@@ -23,14 +27,33 @@ body {
 }
 
 #PageOptionsMenu {
+    
+    width: 125px;
+    height: calc(100% - 50px);
+    
+    max-width: 125px;
+    max-height: calc(100% - 50px);
     position: fixed;
     top: 50px;
     left: 0;
 }
 
+#topbar {
+    width: calc(100%-125px);
+    height: 75px;
+    padding-top: 10px;
+    margin: -1%;
+    box-sizing: border-box;
+}
+
+.navigation {
+    background-color: #1f2125;
+}
+
 .pageoption {
     color: #056cc0;
     display: grid;
-    size: 50px;
-    max-width: 50px;
+    size: 100x; 
+    max-width: 100px; 
+    margin: 5%;
 }
