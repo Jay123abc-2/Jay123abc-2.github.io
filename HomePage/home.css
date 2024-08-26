@@ -1,5 +1,5 @@
 h1 {
-    text-align: center;
-    color: aliceblue;
-    margin: 0%;
+    position: fixed;
+    top: 0;
+    right: 50%;
 }
