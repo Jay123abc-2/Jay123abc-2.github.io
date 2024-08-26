@@ -1,3 +1,4 @@
+/* Sets standards (Can be altered) */
 body {
     background-color: #010814;
     color: #056cc0;
@@ -5,10 +6,7 @@ body {
     font-size: 16px;
 }
 
-div {
-    margin-top: 3%;
-}
-
+/* Navigation */
 #homebutton {
     background: transparent;
     size: 50px;
@@ -24,9 +22,14 @@ div {
     left: 0;
 }
 
+#PageOptionsMenu {
+    position: fixed;
+    top: 50px;
+    left: 0;
+}
+
 .pageoption {
     color: #056cc0;
-    align-items: center;
     display: grid;
     size: 50px;
     max-width: 50px;

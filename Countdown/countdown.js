@@ -1,4 +1,5 @@
 class CountdownTimer {
+    // Create a timer, targetDate being an int. 
     constructor({
         selector,
         targetDate
@@ -14,6 +15,8 @@ class CountdownTimer {
         }
     }
 
+    // Gets the time remaining from given endTime 
+    // Add something to support - values?
     GetTimeRemaining(endTime) {
         const total = endTime - Date.now()
         const days = Math.floor(total / (1000 * 60 * 60 * 24))
@@ -30,6 +33,7 @@ class CountdownTimer {
         }
     }
 
+    // Updates timers text
     UpdateTimer({days, hours, minutes, seconds}) {
         this.refs.days.textContent = days
         this.refs.hours.textContent = hours
@@ -37,7 +41,8 @@ class CountdownTimer {
         this.refs.seconds.textContent = seconds
     }
 
-    StartTimer(){ // Time must be a int
+    // Starts the timer
+    StartTimer(){ 
         const timer = this.GetTimeRemaining(this.targetDate)
         this.UpdateTimer(timer)
         setInterval(() => {

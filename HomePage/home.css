@@ -3,3 +3,9 @@ h1 {
     top: 0;
     right: 50%;
 }
+
+p {
+    position: fixed;
+    top: 60px;
+    right: 45%;
+}
