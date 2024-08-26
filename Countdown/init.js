@@ -4,7 +4,7 @@ const timer = new CountdownTimer({
 })
 timer.StartTimer()
 
-Time = (Math.floor(Date.now() / (24 * 60 * 60 * 1000)) * 24 * 60 * 60 * 1000) + 75600000
+Time = (Math.floor(Date.now() / (24 * 60 * 60 * 1000)) * 24 * 60 * 60 * 1000) + 77400000
 //Time = (Math.floor(Date.now() / (24 * 60 * 60 * 1000)) * 24 * 60 * 60 * 1000) + 72000000
 
 const timer1 = new CountdownTimer({
