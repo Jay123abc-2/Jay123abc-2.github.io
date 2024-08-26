@@ -37,7 +37,7 @@ class CountdownTimer {
         this.refs.seconds.textContent = seconds
     }
 
-    StartTimer(){
+    StartTimer(){ // Time must be a int
         const timer = this.GetTimeRemaining(this.targetDate)
         this.UpdateTimer(timer)
         setInterval(() => {
