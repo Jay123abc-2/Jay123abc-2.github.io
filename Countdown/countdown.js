@@ -11,7 +11,8 @@ class CountdownTimer {
             days: document.querySelector(`${this.selector} [data-value="days"]`),
             hours: document.querySelector(`${this.selector} [data-value="hours"]`),
             minutes: document.querySelector(`${this.selector} [data-value="minutes"]`),
-            seconds: document.querySelector(`${this.selector} [data-value="seconds"]`)
+            seconds: document.querySelector(`${this.selector} [data-value="seconds"]`),
+            endText: document.querySelector(`${this.selector} [data-value="endtime"]`)
         }
     }
 
@@ -45,6 +46,12 @@ class CountdownTimer {
     StartTimer(){ 
         const timer = this.GetTimeRemaining(this.targetDate)
         this.UpdateTimer(timer)
+        
+        const date = new Date(this.targetDate)
+        const formattedDate = date.toLocaleDateString()
+        const formattedTime = date.toLocaleTimeString().slice(0, -3)
+        console.log(formattedDate, formattedTime)
+        this.refs.endText.textContent += formattedDate + " at " + formattedTime
         setInterval(() => {
             const timer = this.GetTimeRemaining(this.targetDate)
             this.UpdateTimer(timer)

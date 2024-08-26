@@ -6,7 +6,8 @@ body {
     display:block;
     margin: 0 auto;
     max-width: 80%;
-    div {
+    
+    .Time {
         background-color: #111317;
         display:inline-block;
         padding: 2rem;
