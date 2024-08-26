@@ -1,4 +1,5 @@
-header {
-    font-size: 2.5rem;
-    font-weight: bold;
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin: 0%;
 }

@@ -1,11 +1,26 @@
 body {
     background-color: #010814;
     color: #056cc0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
-#pageoption {
+#homebutton {
+    background: transparent;
+    size: 50px;
+    max-height: 50px;
+    max-width: 50px;
+    border-width: 5px;
+    border-radius: 10%;
+    border-color: #000;
+    margin-top: -100%;
+    text-align: left;
+}
+
+.pageoption {
     color: #056cc0;
     align-items: center;
     background-color: #111317;
     color: #056cc0;
+    display: list-item;
 }
